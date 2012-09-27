@@ -63,3 +63,10 @@ set noexpandtab
  " see :h vundle for more details or wiki for FAQ
  " NOTE: comments after Bundle command are not allowed..
  
+ " Auto Open NERDTree when no file on command line
+ function! StartUp()
+	 if 0 == argc()
+		 NERDTree
+	 end
+ endfunction
+ au VimEnter * call StartUp()

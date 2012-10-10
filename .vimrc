@@ -43,6 +43,8 @@ set noexpandtab
  Bundle 'scrooloose/nerdtree.git'
  Bundle 'nrocco/vim-phplint'
  Bundle 'ervandew/supertab.git'
+ Bundle 'hokaccha/vim-html5validator.git'
+ Bundle 'jwhitley/vim-matchit'
  " vim-scripts repos
  " non github repos
  " Bundle 'git://git.wincent.com/command-t.git'

@@ -50,6 +50,7 @@ set noexpandtab
  Bundle 'ervandew/supertab.git'
  Bundle 'hokaccha/vim-html5validator.git'
  Bundle 'jwhitley/vim-matchit'
+ Bundle 'plasticboy/vim-markdown'
  " vim-scripts repos
  " non github repos
  " Bundle 'git://git.wincent.com/command-t.git'

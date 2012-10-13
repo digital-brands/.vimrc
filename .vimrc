@@ -1,5 +1,9 @@
+ " Mapleader
+ let mapleader = ','
+
  set nocompatible               " be iMproved
  filetype off                   " required!
+
 
  set background=dark
 
@@ -41,6 +45,7 @@ set noexpandtab
  "
  " original repos on github
  Bundle 'scrooloose/nerdtree.git'
+ Bundle 'scrooloose/nerdcommenter.git'
  Bundle 'nrocco/vim-phplint'
  Bundle 'ervandew/supertab.git'
  Bundle 'hokaccha/vim-html5validator.git'

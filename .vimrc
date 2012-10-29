@@ -1,8 +1,8 @@
- " Mapleader
- let mapleader = ','
-
  set nocompatible               " be iMproved
  filetype off                   " required!
+
+ " Mapleader
+ let mapleader = ','
 
 
  set background=dark
@@ -44,23 +44,25 @@ set noexpandtab
  " My Bundles here:
  "
  " original repos on github
+ " Functional
  Bundle 'scrooloose/nerdtree.git'
  Bundle 'scrooloose/nerdcommenter.git'
- Bundle 'nrocco/vim-phplint'
  Bundle 'ervandew/supertab.git'
- Bundle 'hokaccha/vim-html5validator.git'
  Bundle 'jwhitley/vim-matchit'
+ Bundle 'tpope/vim-fugitive'
+
+ " Syntax
  Bundle 'plasticboy/vim-markdown'
  Bundle 'groenewege/vim-less'
+ 
+ " Syntax Checkers
+ Bundle 'nrocco/vim-phplint'
+ Bundle 'hokaccha/vim-html5validator.git'
+
  " vim-scripts repos
  " non github repos
  " Bundle 'git://git.wincent.com/command-t.git'
  " ...
-
- " Open NERDTree by default
- " autocmd VimEnter * NERDTree
- " autocmd BufEnter * NERDTreeMirror
-
  filetype plugin indent on     " required! 
  "
  " Brief help
@@ -79,3 +81,7 @@ set noexpandtab
 	 end
  endfunction
  au VimEnter * call StartUp()
+
+ " Omnicomplete with SuperTab
+ let g:SuperTabDefaultCompletionType = "context"
+

@@ -22,11 +22,15 @@ set noexpandtab
  " Switch off all auto-indenting
  set nocindent
  set nosmartindent
- set noautoindent
+ set autoindent
  set indentexpr=
- filetype indent off
  filetype plugin indent off
- 
+ syntax on
+ set mouse=a
+
+ " Case Insensitive searc
+ set ignorecase
+
  " PuTTY
  "if &term =~ "xterm"
 	"256 color --
@@ -43,6 +47,7 @@ set noexpandtab
  Bundle 'scrooloose/nerdtree.git'
  Bundle 'nrocco/vim-phplint'
  Bundle 'ervandew/supertab.git'
+ Bundle 'tpope/vim-fugitive'
  " vim-scripts repos
  " non github repos
  " Bundle 'git://git.wincent.com/command-t.git'

@@ -62,6 +62,8 @@ set noexpandtab
  " Syntax Checkers
  Bundle 'nrocco/vim-phplint'
  Bundle 'hokaccha/vim-html5validator.git'
+ Bundle 'scrooloose/syntastic.git'
+ let g:syntastic_auto_loc_list = 1
 
  " vim-scripts repos
  " non github repos

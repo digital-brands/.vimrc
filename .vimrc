@@ -18,9 +18,9 @@
  set number
 
 " Tabstop
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 set noexpandtab
  
  " Switch off all auto-indenting
@@ -58,12 +58,20 @@ set noexpandtab
  " Syntax
  Bundle 'plasticboy/vim-markdown'
  Bundle 'groenewege/vim-less'
+ Bundle 'dsawardekar/wordpress.vim'
+ nnoremap <Leader>m :w <BAR> !lessc % > %:t:r.css<CR><space>
+
+ " Snippits
+ Bundle 'tomtom/tlib_vim.git'
+ Bundle "MarcWeber/vim-addon-mw-utils"
+ Bundle 'garbas/vim-snipmate'
+ Bundle "honza/vim-snippets"
  
  " Syntax Checkers
  Bundle 'nrocco/vim-phplint'
  Bundle 'hokaccha/vim-html5validator.git'
  Bundle 'scrooloose/syntastic.git'
- let g:syntastic_auto_loc_list = 1
+ "let g:syntastic_auto_loc_list = 1
 
  " vim-scripts repos
  " non github repos
@@ -84,6 +92,7 @@ set noexpandtab
  function! StartUp()
 	 if 0 == argc()
 		 NERDTree
+		 call feedkeys("\<C-W>l:q\<Enter>","t")
 	 end
  endfunction
  au VimEnter * call StartUp()

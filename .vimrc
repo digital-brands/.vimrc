@@ -1,5 +1,7 @@
  set nocompatible               " be iMproved
- filetype off                   " required!
+ filetype on                   " required!
+ filetype indent on
+ filetype plugin on
 
  " Mapleader
  let mapleader = ','
@@ -28,12 +30,23 @@ set noexpandtab
  set nosmartindent
  set autoindent
  set indentexpr=
+ set rtp+=$GOROOT/misc/vim
  filetype plugin indent off
  syntax on
  set mouse=a
 
  " Case Insensitive searc
  set ignorecase
+
+ " Source LESS in Vim
+ au BufRead,BufNewFile *.less set filetype=less
+
+ " Source Go VIM
+ au BufRead,BufNewFile *.go set filetype=go
+ let g:go_highlight_functions = 1
+ let g:go_highlight_methods = 1
+ let g:go_highlight_structs = 1
+ "source ~/.vim/bundle/vim-go/syntax/go.vim
 
  " PuTTY
  "if &term =~ "xterm"
@@ -59,6 +72,7 @@ set noexpandtab
  Bundle 'plasticboy/vim-markdown'
  Bundle 'groenewege/vim-less'
  Bundle 'dsawardekar/wordpress.vim'
+ Bundle 'fatih/vim-go'
  nnoremap <Leader>m :w <BAR> !lessc % > %:t:r.css<CR><space>
 
  " Snippits

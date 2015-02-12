@@ -114,3 +114,6 @@ set noexpandtab
  " Omnicomplete with SuperTab
  let g:SuperTabDefaultCompletionType = "context"
 
+ "Default peekaboo window
+ let g:peekaboo_window = 'vertical botright 30new'
+

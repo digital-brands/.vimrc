@@ -67,6 +67,7 @@ set noexpandtab
  Bundle 'ervandew/supertab.git'
  Bundle 'jwhitley/vim-matchit'
  Bundle 'tpope/vim-fugitive'
+ Bundle 'ctrlpvim/ctrlp.vim'
 
  " Syntax
  Bundle 'plasticboy/vim-markdown'

@@ -74,6 +74,7 @@ set noexpandtab
  Bundle 'groenewege/vim-less'
  Bundle 'dsawardekar/wordpress.vim'
  Bundle 'fatih/vim-go'
+ Bundle 'othree/yajs.vim'
  nnoremap <Leader>m :w <BAR> !lessc % > %:t:r.css<CR><space>
 
  " Snippits
@@ -118,3 +119,8 @@ set noexpandtab
  "Default peekaboo window
  let g:peekaboo_window = 'vertical botright 30new'
 
+ " Ctrl-P - Enter to Open in New Tab
+ let g:ctrlp_prompt_mappings = {
+	 \ 'AcceptSelection("e")': ['<c-t>'],
+	 \ 'AcceptSelection("t")': ['<cr>'],
+	 \ }

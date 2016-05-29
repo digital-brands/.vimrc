@@ -23,7 +23,7 @@
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
-set noexpandtab
+set expandtab
  
  " Switch off all auto-indenting
  set nocindent
@@ -40,6 +40,9 @@ set noexpandtab
 
  " Source LESS in Vim
  au BufRead,BufNewFile *.less set filetype=less
+
+ " Source ejs in Vim
+ au BufNewFile,BufRead *.ejs set filetype=html
 
  " Source Go VIM
  au BufRead,BufNewFile *.go set filetype=go
@@ -75,6 +78,8 @@ set noexpandtab
  Bundle 'dsawardekar/wordpress.vim'
  Bundle 'fatih/vim-go'
  Bundle 'othree/yajs.vim'
+ Bundle 'digitaltoad/vim-pug'
+ au BufNewFile,BufRead *.jade setf pug
  nnoremap <Leader>m :w <BAR> !lessc % > %:t:r.css<CR><space>
 
  " Snippits

@@ -53,6 +53,9 @@ set expandtab
  let g:go_highlight_methods = 1
  let g:go_highlight_structs = 1
  "source ~/.vim/bundle/vim-go/syntax/go.vim
+ 
+ " Source PUG
+ au BufNewFile,BufRead *.jade setf pug
 
  " PuTTY
  "if &term =~ "xterm"
@@ -83,7 +86,6 @@ set expandtab
  Bundle 'othree/yajs.vim'
  Bundle 'digitaltoad/vim-pug'
  Bundle 'smerrill/vcl-vim-plugin'
- au BufNewFile,BufRead *.jade setf pug
  nnoremap <Leader>m :w <BAR> !lessc % > %:t:r.css<CR><space>
 
  " Snippits

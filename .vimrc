@@ -41,6 +41,9 @@ set expandtab
  " Source LESS in Vim
  au BufRead,BufNewFile *.less set filetype=less
 
+ " source vcl
+ au BufRead,BufNewFile *.vcl set filetype=vcl
+
  " Source ejs in Vim
  au BufNewFile,BufRead *.ejs set filetype=html
 
@@ -79,6 +82,7 @@ set expandtab
  Bundle 'fatih/vim-go'
  Bundle 'othree/yajs.vim'
  Bundle 'digitaltoad/vim-pug'
+ Bundle 'smerrill/vcl-vim-plugin'
  au BufNewFile,BufRead *.jade setf pug
  nnoremap <Leader>m :w <BAR> !lessc % > %:t:r.css<CR><space>
 
